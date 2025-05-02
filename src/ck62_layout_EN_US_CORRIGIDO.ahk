@@ -28,16 +28,26 @@ SendMode "Input"
 ; Cedilha (Ç)
 !c::Send "ç"       ; Alt + C = ç
 !+c::Send "Ç"      ; Alt + Shift + C = Ç
+; ========================
+; 🔤 ACENTOS PARA E E O
+; ========================
+!^e::Send "ê"      ; Alt + Ctrl + E = ê
+!+^e::Send "Ê"     ; Alt + Ctrl + Shift + E = Ê
+!^o::Send "ô"      ; Alt + Ctrl + O = ô
+!+^o::Send "Ô"     ; Alt + Ctrl + Shift + O = Ô
+
 
 
 ; ========================
 ; 🎮 TECLAS DE SETA (CK62)
 ; ========================
+; segurar Fn+3 até o 3 mudar de cor.
 
-/::Send "{Up}"             ; / = Seta para cima
-RAlt::Send "{Left}"        ; Alt direito = Seta para esquerda
-RCtrl::Send "{Right}"      ; Ctrl direito = Seta para direita
-AppsKey::Send "{Down}"     ; Menu = Seta para baixo
+;--- para usar / e ?
+
+<+Up::Send "/"      ; LShift + Upkey -> /
+
+>+Up::Send "?"      ; RShift + / -> ?
 
 ; ========================
 ; ❌ FECHAR SCRIPT
