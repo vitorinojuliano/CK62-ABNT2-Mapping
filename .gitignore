@@ -1,3 +1,12 @@
 "# Ignorar arquivos do Windows/AHK" 
-"Thumbs.db" 
-"*.exe" 
+*.tmp
+*.log
+*.ahk~
+*.exe
+*.bin
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+ehthumbs_vista.db
+*.bak
