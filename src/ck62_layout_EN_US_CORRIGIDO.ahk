@@ -2,7 +2,6 @@
 #SingleInstance Force
 SendMode "Input"
 
-
 ; ========================
 ; 🔉 CONTROLE DE VOLUME (Ctrl Esquerdo + -/=)
 ; ========================
@@ -13,41 +12,43 @@ SendMode "Input"
 ; 🔤 ACENTOS ABNT2 (Mac-like)
 ; ========================
 !a::Send "á"       ; Alt + A = á
-!e::Send "é"       ; Alt + E = é
-!i::Send "í"       ; Alt + I = í
-!o::Send "ó"       ; Alt + O = ó
-!u::Send "ú"       ; Alt + U = ú
 !+a::Send "Á"      ; Alt + Shift + A = Á
+!e::Send "é"       ; Alt + E = é
+!+e::Send "É"      ; Alt + Shift + E = É
+!i::Send "í"       ; Alt + I = í
+!+i::Send "Í"      ; Alt + Shift + I = Í
+!o::Send "ó"       ; Alt + O = ó
+!+o::Send "Ó"      ; Alt + Shift + O = Ó
+!u::Send "ú"       ; Alt + U = ú
+!+u::Send "Ú"      ; Alt + Shift + U = Ú
 
-; Til (~)
+; TIL (~)
 !n::Send "ã"       ; Alt + N = ã
 !+n::Send "Ã"      ; Alt + Shift + N = Ã
 !m::Send "õ"       ; Alt + M = õ
 !+m::Send "Õ"      ; Alt + Shift + M = Õ
 
-; Cedilha (Ç)
+; CEDILHA (Ç)
 !c::Send "ç"       ; Alt + C = ç
 !+c::Send "Ç"      ; Alt + Shift + C = Ç
-; ========================
-; 🔤 ACENTOS PARA E E O
-; ========================
-!^e::Send "ê"      ; Alt + Ctrl + E = ê
-!+^e::Send "Ê"     ; Alt + Ctrl + Shift + E = Ê
-!^o::Send "ô"      ; Alt + Ctrl + O = ô
-!+^o::Send "Ô"     ; Alt + Ctrl + Shift + O = Ô
 
-
+; CIRCUNFLEXO (^)
+!^e::Send "ê"       ; Alt + Ctrl + E = ê
+!+^e::Send "Ê"      ; Alt + Ctrl + Shift + E = Ê
+!^o::Send "ô"       ; Alt + Ctrl + O = ô
+!+^o::Send "Ô"      ; Alt + Ctrl + Shift + O = Ô
+!^a::Send "â"       ; Alt + Ctrl + A = â
+!+^a::Send "Â"      ; Alt + Ctrl + Shift + A = Â
+!^i::Send "î"       ; Alt + Ctrl + I = î
+!+^i::Send "Î"      ; Alt + Ctrl + Shift + I = Î
+!^u::Send "û"       ; Alt + Ctrl + U = û
+!+^u::Send "Û"      ; Alt + Ctrl + Shift + U = Û
 
 ; ========================
 ; 🎮 TECLAS DE SETA (CK62)
 ; ========================
-; segurar Fn+3 até o 3 mudar de cor.
-
-;--- para usar / e ?
-
 <+Up::Send "/"      ; LShift + Upkey -> /
-
->+Up::Send "?"      ; RShift + / -> ?
+>+Up::Send "?"      ; RShift + Upkey -> ?
 
 ; ========================
 ; ❌ FECHAR SCRIPT
